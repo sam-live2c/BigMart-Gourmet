@@ -215,7 +215,7 @@ const Cart: React.FC<CartProps> = ({ cart, setCart, wishlist = [], onToggleWishl
              <button 
                 onClick={() => setActiveTab('cart')}
                 className={`flex-1 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTab === 'cart' ? 'bg-[#15803d] text-white' : 'bg-white border border-gray-300 text-gray-700'}`}>
-                Big Mart ({cart.length})
+                BigMart Gourmet ({cart.length})
              </button>
              <button 
                 onClick={() => setActiveTab('wishlist')}

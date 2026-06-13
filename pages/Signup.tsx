@@ -442,7 +442,7 @@ const Signup: React.FC<SignupProps> = ({ onSignup }) => {
                     className={`rounded border-gray-300 text-[#2874f0] focus:ring-[#2874f0] mt-0.5 cursor-pointer h-4 w-4 shrink-0 transition duration-150 ${errors.agreedToTerms ? 'border-red-500' : ''}`}
                   />
                   <label htmlFor="agreedToTerms" className="text-xs text-gray-500 leading-normal select-none cursor-pointer">
-                    I agree to Big Mart's <Link to="/terms" className="text-[#2874f0] font-bold hover:underline">Terms of Use</Link> and <Link to="/privacy" className="text-[#2874f0] font-bold hover:underline">Privacy Policy</Link>
+                    I agree to BigMart Gourmet's <Link to="/terms" className="text-[#2874f0] font-bold hover:underline">Terms of Use</Link> and <Link to="/privacy" className="text-[#2874f0] font-bold hover:underline">Privacy Policy</Link>
                   </label>
                 </div>
                 {errors.agreedToTerms && (
@@ -452,7 +452,7 @@ const Signup: React.FC<SignupProps> = ({ onSignup }) => {
 
               <div className="bg-gray-50 px-3 py-2.5 rounded-sm flex items-start gap-3 mb-4 border border-gray-100">
                 <ShieldCheck className="text-[#2874f0] shrink-0 mt-0.5" size={16} />
-                <p className="text-[10px] text-gray-500 leading-normal">Your information is protected with Big Mart's industry-standard encryption protocols.</p>
+                <p className="text-[10px] text-gray-500 leading-normal">Your information is protected with BigMart Gourmet's industry-standard encryption protocols.</p>
               </div>
 
               {/* Main submit button in orange */}

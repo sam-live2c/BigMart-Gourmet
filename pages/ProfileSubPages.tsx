@@ -939,7 +939,7 @@ const ProfileSubPages: React.FC<ProfileSubPagesProps> = ({
       <div className="bg-blue-50 rounded-2xl p-6 flex items-center gap-4">
         <ShieldCheck size={24} className="text-[#15803d] shrink-0" />
         <div className="text-[10px] text-blue-800 font-bold uppercase leading-relaxed tracking-tight">
-          Big Mart Payments is 100% PCI-DSS compliant. Your security is our
+          BigMart Gourmet Payments is 100% PCI-DSS compliant. Your security is our
           highest priority.
         </div>
       </div>

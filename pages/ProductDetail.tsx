@@ -511,43 +511,45 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
       </div>
 
       {/* Sticky Bottom Bar Match */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-3 py-3 flex gap-2 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200/80 px-4 pt-3 pb-5 flex items-center gap-3 z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.06)] md:hidden">
         <button
           onClick={handleAddToCart}
-          className="flex items-center justify-center p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-700"
+          className="flex items-center justify-center w-12 h-12 shrink-0 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 hover:text-gray-900 active:scale-95 hover:bg-gray-100 transition-all duration-150 shadow-sm"
+          title="Add to Cart"
         >
           <ShoppingCart size={20} />
         </button>
-        <button onClick={handleInstantCODClick} className="flex-1 border border-gray-300 rounded-lg flex flex-col items-center justify-center bg-white hover:bg-gray-50 transition-colors">
-          <span className="text-sm font-bold text-gray-900 leading-none">
-            Instant COD
-          </span>
-        </button>
-        <button
-          onClick={handleBuyNow}
-          className="flex-1 bg-[#ffc200] rounded-lg text-gray-900 font-bold text-sm flex items-center justify-center hover:bg-[#ffb300]"
-        >
-          Buy at ₹{((product.price ?? 0) * quantity).toLocaleString()}
-        </button>
-      </div>
-
-      {/* Desktop Actions overlay (optional if we remove bottom bar on desktop) */}
-      <div className="hidden md:flex fixed bottom-6 left-1/2 -translate-x-1/2 bg-white shadow-2xl rounded-full px-6 py-3 border border-gray-100 items-center gap-4 z-50 fade-in-up">
-        <button
-          onClick={handleAddToCart}
-          className="flex items-center gap-2 font-bold px-6 py-2 border rounded-full hover:bg-gray-50 uppercase tracking-widest text-sm"
-        >
-          <ShoppingCart size={18} /> Add to Cart
-        </button>
-        <button
-          onClick={handleInstantCODClick}
-          className="flex items-center gap-2 font-bold px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-50 uppercase tracking-widest text-sm"
+        <button 
+          onClick={handleInstantCODClick} 
+          className="flex-1 h-12 border border-gray-300 rounded-xl flex items-center justify-center bg-white text-gray-800 font-bold text-sm tracking-wide hover:bg-gray-50 hover:text-gray-900 active:scale-95 transition-all duration-150 shadow-sm"
         >
           Instant COD
         </button>
         <button
           onClick={handleBuyNow}
-          className="flex items-center gap-2 font-bold px-8 py-2 bg-[#ffc200] text-black rounded-full hover:bg-yellow-500 uppercase tracking-widest text-sm shadow-md"
+          className="flex-1 h-12 bg-gradient-to-r from-amber-400 to-[#ffc200] hover:from-amber-500 hover:to-[#ffb300] text-gray-950 font-black text-sm flex items-center justify-center rounded-xl shadow-[0_4px_14px_rgba(255,194,0,0.3)] active:scale-95 transition-all duration-150 uppercase tracking-wider"
+        >
+          Buy at ₹{((product.price ?? 0) * quantity).toLocaleString()}
+        </button>
+      </div>
+
+      {/* Desktop Actions overlay */}
+      <div className="hidden md:flex fixed bottom-6 left-1/2 -translate-x-1/2 bg-white shadow-[0_15px_50px_rgba(0,0,0,0.15)] rounded-2xl p-2 border border-gray-100 items-center gap-2 z-50 scale-in animate-in fade-in duration-200">
+        <button
+          onClick={handleAddToCart}
+          className="flex items-center gap-2 font-bold px-5 py-3 text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-50 uppercase tracking-widest text-xs transition duration-150 active:scale-95"
+        >
+          <ShoppingCart size={16} /> Add to Cart
+        </button>
+        <button
+          onClick={handleInstantCODClick}
+          className="flex items-center gap-2 font-bold px-5 py-3 border border-gray-200 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 uppercase tracking-widest text-xs transition duration-150 active:scale-95"
+        >
+          Instant COD
+        </button>
+        <button
+          onClick={handleBuyNow}
+          className="flex items-center gap-2 font-black px-8 py-3 bg-[#ffc200] hover:bg-amber-400 text-gray-950 rounded-xl hover:shadow-[0_4px_14px_rgba(255,194,0,0.25)] uppercase tracking-wider text-xs transition duration-150 active:scale-95"
         >
           Buy Now
         </button>
@@ -582,13 +584,13 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
               
               <button
                 onClick={confirmCOD}
-                className="w-full bg-[#ffc200] hover:bg-[#f0b500] text-black font-semibold text-base py-3 rounded-lg shadow-sm leading-none transition-colors mb-2"
+                className="w-full h-12 bg-gradient-to-r from-amber-400 to-[#ffc200] hover:from-amber-500 hover:to-[#ffb300] text-gray-950 font-black text-sm rounded-xl shadow-[0_4px_12px_rgba(255,194,0,0.2)] active:scale-95 transition-all duration-150 uppercase tracking-wider mb-2.5"
               >
                 Place Your Order
               </button>
               <button
                 onClick={() => setShowCODModal(false)}
-                className="w-full bg-white border border-gray-300 text-gray-700 font-semibold text-base py-3 rounded-lg hover:bg-gray-50 transition-colors"
+                className="w-full h-12 bg-white border border-gray-300 text-gray-700 font-bold text-sm rounded-xl hover:bg-gray-50 active:scale-95 transition-all duration-150 uppercase tracking-widest"
               >
                 Cancel
               </button>

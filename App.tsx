@@ -636,8 +636,7 @@ const App: React.FC = () => {
                 <Route path="/cookies" element={<StaticInfo title="Cookie Policy" type="cookies" />} />
                 <Route path="/legal" element={<StaticInfo title="Legal Information" type="legal" />} />
                 <Route path="/shipping" element={<StaticInfo title="Shipping Information" type="shipping" />} />
-                <Route path="/returns" element={<StaticInfo title="Returns & Exchange" type="returns" />} />
-                <Route path="/size-charts" element={<StaticInfo title="Size Charts" type="size" />} />
+                <Route path="/returns" element={<StaticInfo title="Refunds & Cancellations" type="returns" />} />
                 
                 <Route path="/addresses" element={<ProfileSubPages type="addresses" user={user} setUser={customSetUser} />} />
                 <Route path="/payments" element={<ProfileSubPages type="payments" user={user} setUser={customSetUser} />} />

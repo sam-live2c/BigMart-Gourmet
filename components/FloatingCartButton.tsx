@@ -20,6 +20,7 @@ const FloatingCartButton: React.FC<FloatingCartButtonProps> = ({ cartCount }) =>
   // - Privacy Policy: /privacy
   // - Terms & Conditions: /terms
   // - Cancellations & Refunds: /profile/cancellations, /returns
+  // - Auth Pages: /login, /signup
   const hiddenPrefixes = [
     '/account',
     '/profile',
@@ -32,6 +33,8 @@ const FloatingCartButton: React.FC<FloatingCartButtonProps> = ({ cartCount }) =>
     '/privacy',
     '/terms',
     '/returns',
+    '/login',
+    '/signup',
   ];
 
   const shouldHideByRoute = hiddenPrefixes.some(prefix => 

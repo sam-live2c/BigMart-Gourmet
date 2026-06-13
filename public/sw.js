@@ -1,4 +1,4 @@
-// Service Worker for Big Mart eCommerce (PWA / Offline Support)
+// Service Worker for BigMart Gourmet (PWA / Offline Support)
 
 const CACHE_NAME = 'bigmart-assets-v1';
 const IMAGE_CACHE_NAME = 'bigmart-images-v1';

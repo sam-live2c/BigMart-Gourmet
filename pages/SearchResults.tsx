@@ -92,7 +92,7 @@ const ListProductCard: React.FC<{
           </div>
 
           <p className="text-xs text-gray-500 mb-2">
-            FREE Delivery by Big Mart
+            FREE Delivery by BigMart Gourmet
           </p>
         </div>
 

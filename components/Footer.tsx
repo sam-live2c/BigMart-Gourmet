@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                 to="/returns"
                 className="text-gray-400 hover:text-green-500 transition-colors text-sm"
               >
-                Returns & Exchanges
+                Refunds & Cancellations
               </Link>
             </li>
             <li>
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-gray-500 text-sm font-medium">
-          &copy; {new Date().getFullYear()} Big Mart. All rights reserved.
+          &copy; {new Date().getFullYear()} BigMart Gourmet. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <Link

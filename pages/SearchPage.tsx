@@ -101,7 +101,7 @@ const SearchPage: React.FC = () => {
             ref={inputRef}
             type="text"
             className="w-full bg-white text-gray-900 py-2.5 pl-4 pr-12 rounded-lg border border-gray-300 focus:border-[#fb641b] focus:ring-2 focus:ring-blue-100 outline-none text-base font-medium shadow-sm"
-            placeholder="Search Big Mart"
+            placeholder="Search BigMart Gourmet"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSearch(query)}

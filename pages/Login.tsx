@@ -320,7 +320,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
             <div className="pt-2">
               <p className="text-[11px] text-gray-500 leading-relaxed mb-4">
-                By continuing, you agree to Big Mart's <Link to="/terms" className="text-[#2874f0] hover:underline font-bold">Terms of Use</Link> and <Link to="/privacy" className="text-[#2874f0] hover:underline font-bold">Privacy Policy</Link>.
+                By continuing, you agree to BigMart Gourmet's <Link to="/terms" className="text-[#2874f0] hover:underline font-bold">Terms of Use</Link> and <Link to="/privacy" className="text-[#2874f0] hover:underline font-bold">Privacy Policy</Link>.
               </p>
 
               <button 
@@ -375,7 +375,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
           <div className="mt-8 text-center text-xs sm:text-sm font-semibold select-all">
             <Link to="/signup" className="text-[#2874f0] hover:underline block py-2">
-              New to Big Mart? Create an account
+              New to BigMart? Create an account
             </Link>
           </div>
         </div>

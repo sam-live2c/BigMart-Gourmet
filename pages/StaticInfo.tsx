@@ -25,32 +25,32 @@ const StaticInfo: React.FC<StaticInfoProps> = ({ title, type }) => {
 
         <div className="space-y-6 text-[15px] leading-relaxed">
           <p>
-            We know that you care how information about you is used and shared, and we appreciate your trust that we will do so carefully and sensibly. This Privacy Notice describes how Big Mart collects and processes your personal information through Big Mart websites, devices, products, services, online stores, and applications that reference this Privacy Notice (together "Big Mart Services").
+            We know that you care how information about you is used and shared, and we appreciate your trust that we will do so carefully and sensibly. This Privacy Notice describes how BigMart Gourmet collects and processes your personal information through BigMart Gourmet websites, devices, products, services, gourmet food ordering platform, and applications that reference this Privacy Notice (together "BigMart Gourmet Services").
           </p>
 
           <div>
-            <h2 className="text-[17px] font-bold mb-2">What Personal Information About Customers Does Big Mart Collect?</h2>
-            <p className="mb-3">We collect your personal information in order to provide and continually improve our products and services. Here are the types of personal information we collect:</p>
+            <h2 className="text-[17px] font-bold mb-2">What Personal Information About Customers Does BigMart Gourmet Collect?</h2>
+            <p className="mb-3">We collect your personal information in order to provide and continually improve our gourmet chef and food delivery products and services. Here are the types of personal information we collect:</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Information You Give Us:</strong> We receive and store any information you provide in relation to Big Mart Services. You can choose not to provide certain information, but then you might not be able to take advantage of many of our Big Mart Services.</li>
-              <li><strong>Automatic Information:</strong> We automatically collect and store certain types of information about your use of Big Mart Services, including information about your interaction with content and services available through Big Mart Services. Like many websites, we use "cookies" and other unique identifiers.</li>
+              <li><strong>Information You Give Us:</strong> We receive and store any information you provide in relation to BigMart Gourmet Services. You can choose not to provide certain information, but then you might not be able to take advantage of many of our BigMart Gourmet Services.</li>
+              <li><strong>Automatic Information:</strong> We automatically collect and store certain types of information about your use of BigMart Gourmet Services, including information about your interaction with gourmet menu items, cuisines, and services available through BigMart Gourmet Services. Like many websites, we use "cookies" and other unique identifiers.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-[17px] font-bold mb-2">For What Purposes Does Big Mart Use Your Personal Information?</h2>
-            <p className="mb-3">We use your personal information to operate, provide, develop, and improve the products and services that we offer our customers. These purposes include:</p>
+            <h2 className="text-[17px] font-bold mb-2">For What Purposes Does BigMart Gourmet Use Your Personal Information?</h2>
+            <p className="mb-3">We use your personal information to operate, provide, develop, and improve the food ordering and product delivery services that we offer our customers. These purposes include:</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Purchase and delivery of products and services.</strong> We use your personal information to take and handle orders, deliver products and services, process payments, and communicate with you about orders, products and services, and promotional offers.</li>
-              <li><strong>Provide, troubleshoot, and improve Big Mart Services.</strong> We use your personal information to provide functionality, analyze performance, fix errors, and improve the usability and effectiveness of the Big Mart Services.</li>
-              <li><strong>Recommendations and personalization.</strong> We use your personal information to recommend features, products, and services that might be of interest to you, identify your preferences, and personalize your experience with Big Mart Services.</li>
+              <li><strong>Purchase and delivery of products and services.</strong> We use your personal information to take and handle gourmet orders, deliver food and beverage items, process secure payments, and communicate with you about orders, gourmet choices, and promotional offers.</li>
+              <li><strong>Provide, troubleshoot, and improve BigMart Gourmet Services.</strong> We use your personal information to provide food ordering and delivery functionality, analyze performance, fix errors, and improve the usability and effectiveness of the BigMart Gourmet Services.</li>
+              <li><strong>Recommendations and personalization.</strong> We use your personal information to recommend cuisines, chef specials, products, and services that might be of interest to you, identify your preferences, and personalize your experience with BigMart Gourmet Services.</li>
             </ul>
           </div>
           
           <div>
-            <h2 className="text-[17px] font-bold mb-2">Does Big Mart Share Your Personal Information?</h2>
+            <h2 className="text-[17px] font-bold mb-2">Does BigMart Gourmet Share Your Personal Information?</h2>
             <p>
-              Information about our customers is an important part of our business, and we are not in the business of selling our customers' personal information to others. We share customers' personal information only as described below and with subsidiaries Big Mart controls that either are subject to this Privacy Notice or follow practices at least as protective as those described in this Privacy Notice.
+              Information about our customers is an important part of our business, and we are not in the business of selling our customers' personal info or culinary preferences to others. We share customers' personal information only as described below and with subsidiaries BigMart Gourmet controls that either are subject to this Privacy Notice or follow practices at least as protective as those described in this Privacy Notice.
             </p>
           </div>
         </div>
@@ -68,42 +68,42 @@ const StaticInfo: React.FC<StaticInfoProps> = ({ title, type }) => {
 
         <div className="space-y-6 text-[15px] leading-relaxed">
           <p>
-            Welcome to Big Mart. Big Mart and/or its affiliates provide website features and other products and services to you when you visit or shop at Big Mart, use Big Mart products or services, use Big Mart applications for mobile, or use software provided by Big Mart in connection with any of the foregoing (collectively, "Big Mart Services"). Big Mart provides the Big Mart Services subject to the following conditions.
+            Welcome to BigMart Gourmet. BigMart Gourmet and/or its affiliates provide website features and other culinary products and services to you when you visit or order at BigMart Gourmet, use BigMart Gourmet cooking/ordering services, use BigMart Gourmet applications for mobile, or use software provided by BigMart Gourmet in connection with any of the foregoing (collectively, "BigMart Gourmet Services"). BigMart Gourmet provides the BigMart Gourmet Services subject to the following Conditions of Use.
           </p>
 
           <p className="font-bold text-[17px]">
-            By using Big Mart Services, you agree to these conditions. Please read them carefully.
+            By using BigMart Gourmet Services, you agree to these conditions. Please read them carefully.
           </p>
 
           <p>
-            We offer a wide range of Big Mart Services, and sometimes additional terms may apply. When you use an Big Mart Service (for example, Your Profile, Gift Cards, or Big Mart Video) you also will be subject to the guidelines, terms and agreements applicable to that Big Mart Service ("Service Terms"). If these Conditions of Use are inconsistent with the Service Terms, those Service Terms will control.
+            We offer a wide range of BigMart Gourmet Services, and sometimes additional terms may apply. When you use a BigMart Gourmet Service (for example, Your Profile, Gift Cards, or Order Tracking) you also will be subject to the guidelines, terms and agreements applicable to that BigMart Gourmet Service ("Service Terms"). If these Conditions of Use are inconsistent with the Service Terms, those Service Terms will control.
           </p>
 
           <div>
             <h2 className="text-[17px] font-bold mb-2">PRIVACY</h2>
             <p>
-              Please review our <Link to="/privacy" className="text-[#007185] hover:text-[#c40000] hover:underline">Privacy Notice</Link>, which also governs your use of Big Mart Services, to understand our practices.
+              Please review our <Link to="/privacy" className="text-[#007185] hover:text-[#c40000] hover:underline">Privacy Notice</Link>, which also governs your use of BigMart Gourmet Services, to understand our practices.
             </p>
           </div>
 
           <div>
             <h2 className="text-[17px] font-bold mb-2">ELECTRONIC COMMUNICATIONS</h2>
             <p>
-              When you use Big Mart Services, or send e-mails, text messages, and other communications from your desktop or mobile device to us, you may be communicating with us electronically. You consent to receive communications from us electronically, such as e-mails, texts, mobile push notices, or notices and messages on this site or through the other Big Mart Services.
+              When you use BigMart Gourmet Services, or send e-mails, text messages, and other communications from your desktop or mobile device to us, you may be communicating with us electronically. You consent to receive communications from us electronically, such as e-mails, texts, mobile push notices, or notices and messages on this site or through the other BigMart Gourmet Services.
             </p>
           </div>
 
           <div>
             <h2 className="text-[17px] font-bold mb-2">COPYRIGHT</h2>
             <p>
-              All content included in or made available through any Big Mart Service, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software is the property of Big Mart or its content suppliers and protected by India and international copyright laws.
+              All content included in or made available through any BigMart Gourmet Service, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software is the property of BigMart Gourmet or its content suppliers and protected by India and international copyright laws.
             </p>
           </div>
           
           <div>
             <h2 className="text-[17px] font-bold mb-2">YOUR ACCOUNT</h2>
             <p>
-              You may need your own Big Mart account to use certain Big Mart Services, and you may be required to be logged in to the account and have a valid payment method associated with it. If there is a problem charging your selected payment method, we may charge any other valid payment method associated with your account. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your account, and you agree to accept responsibility for all activities that occur under your account or password.
+              You may need your own BigMart Gourmet account to use certain BigMart Gourmet Services, and you may be required to be logged in to the account and have a valid payment method associated with it. If there is a problem charging your selected payment method, we may charge any other valid payment method associated with your account. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your account, and you agree to accept responsibility for all activities that occur under your account or password.
             </p>
           </div>
         </div>
@@ -126,10 +126,10 @@ const StaticInfo: React.FC<StaticInfoProps> = ({ title, type }) => {
 
   const getIntro = () => {
     switch (type) {
-      case 'privacy': return "We take your privacy seriously. This policy describes how Big Mart collects, uses, and protects your personal information.";
-      case 'terms': return "These Terms & Conditions govern your use of our platform and services. By using Big Mart, you agree to comply with these terms.";
+      case 'privacy': return "We take your privacy seriously. This policy describes how BigMart Gourmet collects, uses, and protects your personal information.";
+      case 'terms': return "These Terms & Conditions govern your use of our platform and services. By using BigMart Gourmet, you agree to comply with these terms.";
       case 'cookies': return "This Cookie Policy explains how we use cookies and similar technologies to recognize you when you visit our website.";
-      default: return "Welcome to Big Mart, India's premier e-commerce destination. Our mission is to provide an unparalleled shopping experience.";
+      default: return "Welcome to BigMart Gourmet, India's premier food ordering and gourmet culinary destination. Our mission is to provide an unparalleled gourmet dining experience.";
     }
   };
 

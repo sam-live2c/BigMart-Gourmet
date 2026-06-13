@@ -9,7 +9,7 @@ const OrderTracking: React.FC = () => {
 
   const trackData = [
     { status: 'Order Placed', time: 'Just now', location: 'System', desc: 'Successfully received and confirmed by partner store.', completed: true },
-    { status: 'Packed', time: '5 mins ago', location: 'Big Mart Store', desc: 'Item handpicked, packed and sealed.', completed: true },
+    { status: 'Packed', time: '5 mins ago', location: 'BigMart Gourmet Store', desc: 'Item handpicked, packed and sealed.', completed: true },
     { status: 'Out for Delivery', time: 'On the way', location: 'Delivery Executive', desc: 'Our rider has picked up the order and is speeding to your address.', completed: true },
     { status: 'Delivered', time: 'Under 1 hour', location: 'Home', desc: 'Arriving very soon. Enjoy your fresh order!', completed: false },
   ];
@@ -89,7 +89,7 @@ const OrderTracking: React.FC = () => {
                  <Truck className="text-gray-400" size={24} />
              </div>
              <div>
-                <p className="text-sm font-bold text-gray-900">Shipped with Big Mart Express</p>
+                <p className="text-sm font-bold text-gray-900">Shipped with BigMart Express Delivery</p>
                 <div className="text-sm text-gray-600 mt-1 relative group cursor-pointer inline-flex items-center gap-1">
                     Tracking ID: {id || 'OD123456789'} <Info size={14} className="text-gray-400 group-hover:text-gray-700"/>
                     
