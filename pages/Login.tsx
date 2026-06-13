@@ -4,7 +4,7 @@ import { User } from '../types';
 import { auth, db, handleFirestoreError, OperationType } from '../firebase';
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { doc, getDoc, getDocs, collection, getDocFromCache, getDocsFromCache } from 'firebase/firestore';
-import { Loader2, ShoppingBag, ShieldCheck } from 'lucide-react';
+import { Loader2, ShoppingBag, ShieldCheck, Info } from 'lucide-react';
 
 async function fetchWithTimeout<T>(
   serverFn: () => Promise<T>,
@@ -40,6 +40,18 @@ interface LoginProps {
 
 const getFriendlyAuthErrorMessage = (error: any): string => {
   const code = error?.code;
+  const message = error?.message || '';
+  
+  if (
+    message.toLowerCase().includes('missing initial state') ||
+    message.toLowerCase().includes('storage') ||
+    message.toLowerCase().includes('sessionstorage') ||
+    message.toLowerCase().includes('unable to process request') ||
+    (code === 'auth/internal-error' && message.toLowerCase().includes('request'))
+  ) {
+    return "Google login was blocked inside this embedded preview framework (missing initial state due to third-party cookies / sessionStorage partitioning). Please use Email & Password Sign-In (under 'Create an account' below), or open the app in a new browser tab using the top-right button to use Google Login safely!";
+  }
+
   switch (code) {
     case 'auth/invalid-credential':
     case 'auth/wrong-password':
@@ -371,6 +383,23 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 </>
               )}
             </button>
+
+            {/* Embedded IFrame Notice */}
+            <div className="bg-blue-50 border border-blue-100 rounded p-3.5 mt-4">
+              <div className="flex gap-2">
+                <Info size={16} className="text-blue-500 shrink-0 mt-0.5" />
+                <div className="text-[11px] text-blue-800 leading-relaxed space-y-1">
+                  <p className="font-bold">Embedded Preview Note:</p>
+                  <p>
+                    Because this preview runs inside an iframe, Google Auth might be blocked by browser cookie-partitioning (causing a *missing initial state* error).
+                  </p>
+                  <p>
+                    <span className="font-semibold">Quick Fix: </span> 
+                    Please use <span className="font-bold">Email & Password Log In</span> (works perfectly inside the preview) or click <span className="font-semibold">"Open in new tab"</span> at the top-right of the preview window to sign in with Google seamlessly!
+                  </p>
+                </div>
+              </div>
+            </div>
           </form>
 
           <div className="mt-8 text-center text-xs sm:text-sm font-semibold select-all">
