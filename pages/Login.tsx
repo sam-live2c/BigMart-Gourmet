@@ -383,23 +383,6 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 </>
               )}
             </button>
-
-            {/* Embedded IFrame Notice */}
-            <div className="bg-blue-50 border border-blue-100 rounded p-3.5 mt-4">
-              <div className="flex gap-2">
-                <Info size={16} className="text-blue-500 shrink-0 mt-0.5" />
-                <div className="text-[11px] text-blue-800 leading-relaxed space-y-1">
-                  <p className="font-bold">Embedded Preview Note:</p>
-                  <p>
-                    Because this preview runs inside an iframe, Google Auth might be blocked by browser cookie-partitioning (causing a *missing initial state* error).
-                  </p>
-                  <p>
-                    <span className="font-semibold">Quick Fix: </span> 
-                    Please use <span className="font-bold">Email & Password Log In</span> (works perfectly inside the preview) or click <span className="font-semibold">"Open in new tab"</span> at the top-right of the preview window to sign in with Google seamlessly!
-                  </p>
-                </div>
-              </div>
-            </div>
           </form>
 
           <div className="mt-8 text-center text-xs sm:text-sm font-semibold select-all">
